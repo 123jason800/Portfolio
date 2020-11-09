@@ -1,25 +1,230 @@
-/* Background */
+/* Start */
 
 body {
-    min-height: 100vh;
-    background-color: #F4FAFB;
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+    background: #8cc5d5;
 }
 
 
 
+/* Bootstrap Changes */
+.border-right {
+    border-right: 1px solid rgba(241, 241, 241, 0.3)!important;
+}
+
+@media (max-width: 992px) {
+    .border-right {
+        border-right: none!important;
+    }
+}
+
+hr {
+    margin: 0;
+    margin-bottom: 50px;
+    border: 0;
+    height: 2px;
+    background-color: rgba(241, 241, 241, 0.3);
+}
 
 
+/* Typography */
+h1 {
+    line-height: 1.3em;
+    font-size: 36px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin: 0;
+    line-height: 1.4em;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.section-title {
+    color: #fff;
+}
 /* Header */
 
 header {
     position: relative;
-    min-height: 70vh;
+    min-height: 600px;
+    background-image: linear-gradient(to top, #8cc5d5, #70b0c6, #539cb8, #3488ab, #00749d);
+    border-bottom: 2px solid rgba(241, 241, 241, 0.8); 
+}
+.header-image {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
 }
 
-.header-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+#header-title,
+#header-subtitle {
+    color: #fff;
+}
+
+#header-title {
+    font-size: 48px;
+}
+#header-subtitle {
+    font-size: 24px;
+}
+
+.title-block {
+    
+    flex-direction: column;
+ 
+}
+
+.button-group {
+    position: relative;
+    height:  500px;
+    width: 500px;
+    bottom: 40px;
+}
+
+#github {
+    display: block;
+    background: rgb(233, 248, 251);
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    left: 20%;
+    top: 20%;
     position: absolute;
-    opacity: 0.5;
+    
+    
+}
+#linkedin {
+    display: block;
+    background: rgb(0, 87, 141);
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+}
+@media (max-width: 768px) {
+#header-title {
+    font-size: 40px;
+}
+
+header {
+    height: 20vh;
+}
+
+#header-subtitle {
+    font-size: 20px;
+}
+
+
+}
+
+@media (max-width: 992px) {
+    
+
+    .button-group {
+        height: 0px;
+        display: flex;
+        justify-content: space-around;
+        bottom: -120px;
+    }
+   
+
+    #linkedin {
+        height: 100px;
+        width: 100px;
+        margin-left: 20px;
+        position: static;
+        
+    }
+
+    #github {
+        height: 100px;
+        width: 100px;
+        position: static;
+    }
+}
+
+/* Navbar */
+.navbar {
+    background: transparent;
+    height: 80px;
+    border-bottom: 1px solid rgba(241, 241, 241, 0.3);
+}
+
+.navbar a {
+    color: #fff;
+}
+
+
+
+
+/* Portfolios */
+
+@media (max-width: 992px) {
+    #Portfolios {
+        margin-top: 100px;
+    }
+}
+
+
+
+.portfolio-block {
+  border-radius: 25px;
+  margin-bottom: 40px;
+  overflow: hidden;
+  background: #fff;
+}
+.portfolio-block {
+    color: #000;
+}
+.portfolio-block img{
+    
+    border: 0;
+   
+}
+
+.portfolio-block:hover {
+    color: #000;
+    text-decoration: none;
+}
+.portfolio-tools li:first-child {
+    padding-left: 0;
+}
+.portfolio-tools li{
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-right: 1px solid black;
+}
+
+/* About Block */
+.about-block {
+    background: #fff;
+    border-radius: 20px;
+
+}
+
+.about-picture {
+    margin: 0 auto;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+}
+
+/* Footer */
+
+footer {
+    border-top: 1px solid rgba(241, 241, 241, 0.3);
 }
